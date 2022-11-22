@@ -149,7 +149,7 @@ var password=document.getElementById("password").value;
       }
   }
       else{
-          alert("enter 'demouser7663@gmail.com'");
+          alert("enter 'demouser7663@gmai.com'");
       }
 
 

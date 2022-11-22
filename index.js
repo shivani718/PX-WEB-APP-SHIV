@@ -63,80 +63,84 @@ var password=document.getElementById("password").value;
   }
 
   if(username!=""){
-      if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
-      {
-          alert("valid user");
-          b = username.substr(6, 5);
-          var id = b;
+    if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
+    {
+        alert("valid user");
+        b = username.substr(6, 5);
+        var id = b;
 //               var attrib_value= document.getElementById("myCheck").checked;
-          if (username=="vinesh.gandhe@gmail.com") {
-                  aptrinsic('identify', {
-                          //User Fields
-                          "id": id, // Required for logged in app users
-                          "email": username
-                          
+        if (username=="vinesh.gandhe@gmail.com") {
+                aptrinsic('identify', {
+                        //User Fields
+                        "id": id, // Required for logged in app users
+                        "email": username,
+                        "gender": "male",
+//                             "useractive" :attrib_value,
+//                             "checkattrib":attrib_value,
+                        "customtest":"{working:yes,default:no,license:free}",
+                        
 
-                          // "userHash": hash.toString()// optional transient for HMAC identification
-                      },
+                        // "userHash": hash.toString()// optional transient for HMAC identification
+                    },
 
-                      {
-                          //Account Fields
-                          "id": myaccount.a4, //Required
-                          "name": myaccount.a4,
-                          // flat custom attributes
-                      },
-                      
-                      );
-              } else if (username=="gvk7663@gmail.com") {
-                  aptrinsic('identify', {
-                          //User Fields
-                          "id": id, // Required for logged in app users
-                          "email": username
+                    {
+                        //Account Fields
+                        "id": myaccount.a4, //Required
+                        "name": myaccount.a4,
+                        // flat custom attributes
+                    },
+                    
+                    );
+            } else if (username=="gvk7663@gmail.com") {
+                aptrinsic('identify', {
+                        //User Fields
+                        "id": id, // Required for logged in app users
+                        "signUpDate": "06/01/2021 01:52pm",
+                        "email": username
 
-                          // "userHash": hash.toString()// optional transient for HMAC identification
-                      },
+                        // "userHash": hash.toString()// optional transient for HMAC identification
+                    },
 
-                      {
-                          //Account Fields
-                          "id": myaccount.a3, //Required
-                          "name": myaccount.a3,
-                          // flat custom attributes
-                      });
-                  
-              } 
-          else if (username=="vgande@gainsight.com") {
-                  aptrinsic('identify', {
-                          //User Fields
-                          "id": id, // Required for logged in app users
-                          "email": username
+                    {
+                        //Account Fields
+                        "id": myaccount.a3, //Required
+                        "name": myaccount.a3,
+                        // flat custom attributes
+                    });
+            } else if (username=="vgande@gainsight.com") {
+                aptrinsic('identify', {
+                        //User Fields
+                        "id": id, // Required for logged in app users
+                        "email": username
 
-                          // "userHash": hash.toString()// optional transient for HMAC identification
-                      },
+                        // "userHash": hash.toString()// optional transient for HMAC identification
+                    },
 
-                      {
-                          //Account Fields
-                          "id": myaccount.a2, //Required
-                          "name": myaccount.a2,
-                          // flat custom attributes
-                      });
-              } else {
-                  aptrinsic('identify', {
-                          //User Fields
-                          "id": id, // Required for logged in app users
-                          "email": username
+                    {
+                        //Account Fields
+                        "id": myaccount.a2, //Required
+                        "name": myaccount.a2,
+                        // flat custom attributes
+                    });
+            } else {
+                aptrinsic('identify', {
+                        //User Fields
+                        "id": id, // Required for logged in app users
+                        "email": username
 
-                          // "userHash": hash.toString()// optional transient for HMAC identification
-                      },
+                        // "userHash": hash.toString()// optional transient for HMAC identification
+                    },
 
-                      {
-                          //Account Fields
-                          "id": myaccount.a1, //Required
-                          "name": myaccount.a1,
-                          // flat custom attributes
-                      });
-              }
+                    {
+                        //Account Fields
+                        "id": myaccount.a1, //Required
+                        "name": myaccount.a1,
+                        // flat custom attributes
+                    });
+            }
 
-          alert("Logged in user id :" + b);
+        alert("Logged in user id :" + b);
+
           //window.open("/HTML/home.html");
           window.location = "https://shivani718.github.io/PX-WEB-APP-SHIV/home.html";
     

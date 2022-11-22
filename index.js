@@ -63,13 +63,13 @@ var password=document.getElementById("password").value;
   }
 
   if(username!=""){
-    if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
+    if((username=="shivani.reddy00@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="pxwebapp123@shiv.com")&& password=="user" )
     {
         alert("valid user");
         b = username.substr(6, 5);
         var id = b;
 //               var attrib_value= document.getElementById("myCheck").checked;
-        if (username=="vinesh.gandhe@gmail.com") {
+        if (username=="shivani.reddy00@gmail") {
                 aptrinsic('identify', {
                         //User Fields
                         "id": id, // Required for logged in app users
@@ -91,7 +91,7 @@ var password=document.getElementById("password").value;
                     },
                     
                     );
-            } else if (username=="gvk7663@gmail.com") {
+            } else if (username=="scheemala@gainsight.com") {
                 aptrinsic('identify', {
                         //User Fields
                         "id": id, // Required for logged in app users
@@ -122,7 +122,22 @@ var password=document.getElementById("password").value;
                         "name": myaccount.a2,
                         // flat custom attributes
                     });
-            } else {
+            } else if (username=="pxwebapp123@shiv.com") {
+              aptrinsic('identify', {
+                      //User Fields
+                      "id": id, // Required for logged in app users
+                      "email": username
+
+                      // "userHash": hash.toString()// optional transient for HMAC identification
+                  },
+
+                  {
+                      //Account Fields
+                      "id": myaccount.a2, //Required
+                      "name": myaccount.a2,
+                      // flat custom attributes
+                  });
+          } else {
                 aptrinsic('identify', {
                         //User Fields
                         "id": id, // Required for logged in app users

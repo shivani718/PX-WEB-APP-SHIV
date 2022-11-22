@@ -69,7 +69,7 @@ var password=document.getElementById("password").value;
         b = username.substr(6, 5);
         var id = b;
 //               var attrib_value= document.getElementById("myCheck").checked;
-        if (username=="shivani.reddy00@gmail") {
+        if (username=="shivani.reddy00@gmail.com") {
                 aptrinsic('identify', {
                         //User Fields
                         "id": id, // Required for logged in app users
